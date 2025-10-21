@@ -1,5 +1,8 @@
 name: Build
 on: [push, workflow_dispatch]
+permissions:
+  contents: read
+
 jobs:
   Build-and-Test-CDK:
     runs-on: ubuntu-latest
